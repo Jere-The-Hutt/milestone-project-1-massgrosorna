@@ -24,8 +24,22 @@ h3 {
     color: var(--primary-color);
 }
 
+.sub-heading-color {
+    color: var(--highlight-color);
+}
+
+/* Navbar */
+#navbar {
+    background-color: var(--highlight-color);
+}
+
+#navbar .logo {
+    width: 30px;
+}
+
 /* Grid visualisation CSS for testing */
 
+/* 
 .container,
 .row {
     border: 2px solid black;
@@ -35,3 +49,4 @@ h3 {
     border: 2px solid white;
     background-color: lightgray;
 }
+*/
