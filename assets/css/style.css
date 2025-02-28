@@ -1,0 +1,10 @@
+/* Adobe fonts import */
+@import url("https://use.typekit.net/fjv6cjn.css");
+
+body {
+    font-family: "roca", sans-serif;
+}
+
+h1 {
+    font-family: "jimbo-condensed-std", sans-serif;
+}
