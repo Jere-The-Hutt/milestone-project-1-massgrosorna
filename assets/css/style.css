@@ -24,6 +24,10 @@ h3 {
     color: var(--primary-color);
 }
 
+.sub-heading-color {
+    color: var(--highlight-color);
+}
+
 .section{
     padding-top: 4rem; /* Prevent navbar overlap */
 }
@@ -43,10 +47,15 @@ h3 {
 }
 
 .nav-link:hover {
-    color: #FABC50;
+    color: var(--highlight-color-light);
 }
 
 /* Header */
+
+#header {
+    padding-top: 7rem;
+}
+
 #header .logo {
     max-width: 500px;
 }
@@ -57,6 +66,13 @@ h3 {
 
 #header-text {
     padding-top: 20px;
+}
+
+/* Services */
+#services .card {
+    background-color: var(--highlight-color-light);
+    margin-bottom: 1.5rem;
+    border: none;
 }
 
 /* Grid visualisation CSS for testing */
@@ -72,3 +88,37 @@ h3 {
     background-color: lightgray;
 }
 */
+
+/* Media queries */
+
+/* Medium devices (tablets, 768px and up */
+@media screen and (min-width: 768px) {
+    /* Make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 191px;
+    }
+}
+
+/* Large devices (small laptops, 992px and up */
+@media screen and (min-width: 992px) {
+    /* Make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: auto;
+    }
+}
+
+/* Extra large devices (tablets, 1200px and up */
+@media screen and (min-width: 1200px) {
+    /* Make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 220px;
+    }
+}
+
+/* Extra extra large devices (small laptops, 1400px and up */
+@media screen and (min-width: 1400px) {
+    /* Make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 195px;
+    }
+}
