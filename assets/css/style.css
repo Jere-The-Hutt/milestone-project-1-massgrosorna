@@ -1,10 +1,37 @@
 /* Adobe fonts import */
 @import url("https://use.typekit.net/fjv6cjn.css");
 
-body {
-    font-family: "roca", sans-serif;
+/* CSS Variables */
+:root {
+    --primary-font: "roca", sans-serif;
+    --secondary-font: "jimbo-condensed-std", sans-serif;
+    --primary-color: #37392E; /* dark green */
+    --secondary-color: #7A9273; /* green */
+    --highlight-color: #19647E; /* blue */
+    --highlight-color-light: #FABC50; /* yellow */
 }
 
-h1 {
-    font-family: "jimbo-condensed-std", sans-serif;
+/* Global styles */
+
+body {
+    font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+/* Grid visualisation CSS for testing */
+
+.container,
+.row {
+    border: 2px solid black;
+}
+
+.col-12 {
+    border: 2px solid white;
+    background-color: lightgray;
 }
