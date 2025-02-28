@@ -24,9 +24,10 @@ h3 {
     color: var(--primary-color);
 }
 
-.sub-heading-color {
-    color: var(--highlight-color);
+.section{
+    padding-top: 4rem; /* Prevent navbar overlap */
 }
+
 
 /* Navbar */
 #navbar {
@@ -34,7 +35,28 @@ h3 {
 }
 
 #navbar .logo {
-    width: 30px;
+    width: 50px;
+}
+
+.nav-link {
+    color: #D8DDD4;
+}
+
+.nav-link:hover {
+    color: #FABC50;
+}
+
+/* Header */
+#header .logo {
+    max-width: 500px;
+}
+
+#header h1 {
+    color: #f79112;
+}
+
+#header-text {
+    padding-top: 20px;
 }
 
 /* Grid visualisation CSS for testing */
