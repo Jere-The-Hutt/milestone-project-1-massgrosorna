@@ -32,6 +32,31 @@ h3 {
     padding-top: 4rem; /* Prevent navbar overlap */
 }
 
+/* Buttons */
+.custom-button-filled {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.custom-button-filled:hover {
+    border: 2px solid var(--highlight-color-light);
+    background-color: var(--highlight-color-light);
+    color: white;
+}
+
+.custom-button-outline {
+    border: 3px solid var(--highlight-color);
+    padding: 7px 25px;
+    color: var(--highlight-color);
+}
+
+.custom-button-outline:hover {
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+
 
 /* Navbar */
 #navbar {
@@ -68,11 +93,37 @@ h3 {
     padding-top: 20px;
 }
 
-/* Services */
+/* Main elements */
 #services .card {
     background-color: var(--highlight-color-light);
     margin-bottom: 1.5rem;
     border: none;
+}
+
+/* Footer */
+
+#contact {
+    background-color: var(--primary-color);
+    color: white;
+    padding-bottom: 3rem;
+}
+#contact h2 {
+    color: white;
+}
+#contact .sub-heading-color {
+    color: var(--highlight-color-light)
+}
+
+#contact .social-links i {
+    color: var(--highlight-color-light);
+    font-size: 3rem;
+    transition: color 0.3s ease-in-out;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#contact .social-links i:hover {
+    color: var(--secondary-color);
 }
 
 /* Grid visualisation CSS for testing */
