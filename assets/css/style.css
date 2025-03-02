@@ -28,7 +28,7 @@ h3 {
     color: var(--highlight-color);
 }
 
-.section{
+.section {
     padding-top: 4rem; /* Prevent navbar overlap */
 }
 
@@ -37,17 +37,19 @@ h3 {
     border: 2px solid var(--secondary-color);
     background-color: var(--secondary-color);
     color: white;
+    padding-bottom: 5px;
 }
 
 .custom-button-filled:hover {
     border: 2px solid var(--highlight-color-light);
     background-color: var(--highlight-color-light);
     color: white;
+    padding-bottom: 5px;
 }
 
 .custom-button-outline {
     border: 3px solid var(--highlight-color);
-    padding: 7px 25px;
+    padding: 10px 20px;
     color: var(--highlight-color);
 }
 
@@ -64,7 +66,8 @@ h3 {
 }
 
 #navbar .logo {
-    width: 50px;
+    width: 40px;
+    height: auto;
 }
 
 .nav-link {
@@ -82,7 +85,7 @@ h3 {
 }
 
 #header .logo {
-    max-width: 500px;
+    max-width: 450px;
 }
 
 #header h1 {
@@ -94,11 +97,37 @@ h3 {
 }
 
 /* Main elements */
+#services .row {
+    justify-content: space-evenly;
+}
+
 #services .card {
     background-color: var(--highlight-color-light);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border: none;
+    max-width: 100%;
+    max-height: 80%;
+    width: 30rem; /* Ensures equal card width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px; /* Adjust as needed */
+    width: 100%;
+    object-fit: cover;
+    object-position: top; /* Aligns the image to the top, cropping the bottom */
+}
+
 
 /* Footer */
 
@@ -107,12 +136,17 @@ h3 {
     color: white;
     padding-bottom: 3rem;
 }
-#contact h2 {
-    color: white;
-}
+
 #contact .sub-heading-color {
-    color: var(--highlight-color-light)
+    color: var(--highlight-color-light);
 }
+
+#contact .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Space between icons */
+}
+
 
 #contact .social-links i {
     color: var(--highlight-color-light);
@@ -142,33 +176,45 @@ h3 {
 
 /* Media queries */
 
-/* Medium devices (tablets, 768px and up */
+/* Default adjustments */
+.card-body {
+    min-height: 100px; /* Ensures text space inside the card */
+    padding: 15px;
+}
+
+/* Mobile-first responsive styles */
+@media screen and (max-width: 768px) {
+    #header .logo {
+        max-width: 250px;
+    }
+    .card-img-top {
+        height: 150px; /* Adjust image height for tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #header .logo {
+        max-width: 180px;
+    }
+    .card-img-top {
+        height: 120px; /* Further reduce image height for mobile */
+    }
+}
+
+/* Adjustments for larger screens */
 @media screen and (min-width: 768px) {
-    /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: 191px;
     }
 }
 
-/* Large devices (small laptops, 992px and up */
-@media screen and (min-width: 992px) {
-    /* Make all service cards the same height for consistency */
-    #services .card-body {
-        min-height: auto;
-    }
-}
-
-/* Extra large devices (tablets, 1200px and up */
 @media screen and (min-width: 1200px) {
-    /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: 220px;
     }
 }
 
-/* Extra extra large devices (small laptops, 1400px and up */
 @media screen and (min-width: 1400px) {
-    /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: 195px;
     }
