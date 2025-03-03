@@ -26,7 +26,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/massgrosorna-logo.png" alt="MassGrosorna logo" class="logo">
+                <img src="assets\images\massgrosorna-logo-header.png" alt="MassGrosorna header logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation menu">
@@ -35,9 +35,9 @@
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto text-end">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="library.html">Library</a>
-                    <a class="nav-link" href="#">About us</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Hem</a>
+                    <a class="nav-link" href="library.html">Bibliotek</a>
+                    <a class="nav-link" href="#">Om oss</a>
                 </div>
             </div>
         </div>
@@ -46,16 +46,16 @@
     <!-- Header with logo -->
     <header id="header" class="container section">
         <div class="row">
-            <div class="col-12 col-xl-6  text-center">
+            <div class="col-12 col-xl-6 text-center">
                 <img src="assets\images\massgrosorna-logo.png" alt="MassGrosorna logo" class="logo">
             </div>
             <div id="header-text" class="col-xl-6 text-center text-xl-start">
                 <h1 class="display-3">Läsa, lära, le</h1>
-                <h2 class="my-4">Massgrosorna är ett förlag med en dröm om att bidra</h2>
+                <h2 class="my-2">Massgrosorna är ett förlag med en dröm om att bidra</h2>
                 <ul class="text-start">
-                    <li>till jämlikhet och inkludering.</li>
-                    <li>till normkritiskt tänkande och nya perspektiv.</li>
-                    <li>till en framtid befolkad av trygga, välmående individer.</li>
+                    <li>Till jämlikhet och inkludering.</li>
+                    <li>Till normkritiskt tänkande och nya perspektiv.</li>
+                    <li>Till en framtid befolkad av trygga, välmående individer.</li>
                 </ul>
                 <p>I nuläget publicerar vi främst kortare skönlitterära verk, som brukar uppskattas av barn som
                     vuxna. Samtliga böcker har en pedagogisk utgångspunkt.</p>
@@ -66,21 +66,21 @@
     <!-- Main element to hold all key sections of the home page. It is not part of the grid structure. -->
     <main>
         <!-- Homepage main links section -->
-        <section id="services" class="container section text-center">
+        <section id="services" class="container section">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-lg-5">
-                    <a href="library.html" class="card text-decoration-none">
+                <div class="col-12 col-md-6 col-lg-5 d-flex mb-3 justify-content-center">
+                    <a id="library" href="library.html" class="card text-decoration-none">
                         <img src="assets/images/massgrosorna-library.png" alt="A row of books" class="card-img-top">
                         <div class="card-body">
-                            <h3 class="card-title sub-heading-color">Library</h3>
+                            <h3 class="card-title sub-heading-color">Bibliotek</h3>
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5">
-                    <a href="library.html" class="card text-decoration-none">
-                        <img src="assets/images/massgrosorna-img-01.png" alt="A row of books" class="card-img-top">
+                <div class="col-12 col-md-6 col-lg-5 d-flex mb-3 justify-content-center">
+                    <a id="about" href="library.html" class="card text-decoration-none">
+                        <img src="assets/images/massgrosorna-about-us.png" alt="Two people holding hands" class="card-img-top">
                         <div class="card-body">
-                            <h3 class="card-title sub-heading-color">About us</h3>
+                            <h3 class="card-title sub-heading-color">Om oss</h3>
                         </div>
                     </a>
                 </div>
@@ -93,7 +93,7 @@
     <footer id="contact" class="mt-auto">
         <div class="container section">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center mb-4">
                     <h2 class="sub-heading-color">Get in touch!</h2>
                 </div>
             </div>
@@ -130,14 +130,14 @@
                 </div>
 
                 <!-- Message Field (Middle on small screens) -->
-                <div class="col-12 col-md-4 text-center text-md-start">
+                <div class="col-10 col-md-4 text-center text-md-start">
                     <form action="#" method="GET">
                         <div class="mb-2">
                             <textarea class="form-control" id="message" name="message" placeholder="Your message"
                                 rows="5" required></textarea>
                         </div>
                         <div class="text-center text-md-start">
-                            <button type="submit" class="btn custom-button-filled mt-2">Submit</button>
+                            <button type="submit" class="btn custom-button-filled mt-4">Submit</button>
                         </div>
                     </form>
                 </div>

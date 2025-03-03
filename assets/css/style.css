@@ -125,10 +125,14 @@ h3 {
 }
 
 .card-img-top {
-    height: 190px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
     width: 100%;
     object-fit: cover;
-    object-position: top; /* Aligns the image to the top, cropping the bottom */
+    object-position: auto;
+}
+
+#library .card-img-top {
+    object-position: top;
 }
 
 header h1 {
