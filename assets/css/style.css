@@ -32,6 +32,10 @@ h3 {
     padding-top: 4rem; /* Prevent navbar overlap */
 }
 
+#contact .section {
+    padding-top: 2rem;
+}
+
 /* Buttons */
 .custom-button-filled {
     border: 2px solid var(--secondary-color);
@@ -81,7 +85,7 @@ h3 {
 /* Header */
 
 #header {
-    padding-top: 7rem;
+    padding-top: 5rem;
 }
 
 #header .logo {
@@ -93,7 +97,7 @@ h3 {
 }
 
 #header-text {
-    padding-top: 20px;
+    padding-top: 2.5rem;
 }
 
 /* Main elements */
@@ -103,10 +107,9 @@ h3 {
 
 #services .card {
     background-color: var(--highlight-color-light);
-    margin-bottom: 1rem;
     border: none;
     max-width: 100%;
-    max-height: 80%;
+    max-height: 70%;
     width: 30rem; /* Ensures equal card width */
     display: flex;
     flex-direction: column;
@@ -122,12 +125,19 @@ h3 {
 }
 
 .card-img-top {
-    height: 200px; /* Adjust as needed */
+    height: 190px; /* Adjust as needed */
     width: 100%;
     object-fit: cover;
     object-position: top; /* Aligns the image to the top, cropping the bottom */
 }
 
+header h1 {
+    text-transform: uppercase;
+}
+
+header h2 {
+    color: var(--highlight-color);
+}
 
 /* Footer */
 
@@ -144,7 +154,7 @@ h3 {
 #contact .social-links {
     display: flex;
     justify-content: center;
-    gap: 1rem; /* Space between icons */
+    gap: 2rem; /* Space between icons */
 }
 
 
@@ -158,6 +168,10 @@ h3 {
 
 #contact .social-links i:hover {
     color: var(--secondary-color);
+}
+
+#contact .custom-button-filled {
+    margin-bottom: 1.5rem;
 }
 
 /* Grid visualisation CSS for testing */
@@ -178,8 +192,8 @@ h3 {
 
 /* Default adjustments */
 .card-body {
-    min-height: 100px; /* Ensures text space inside the card */
-    padding: 15px;
+    min-height: 150px; /* Ensures text space inside the card */
+    padding: 20px;
 }
 
 /* Mobile-first responsive styles */
@@ -190,6 +204,10 @@ h3 {
     .card-img-top {
         height: 150px; /* Adjust image height for tablets */
     }
+
+    #services .card {
+        margin-bottom: 0.5rem !important;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -197,25 +215,28 @@ h3 {
         max-width: 180px;
     }
     .card-img-top {
-        height: 120px; /* Further reduce image height for mobile */
+        height: 150px; /* Further reduce image height for mobile */
     }
 }
 
 /* Adjustments for larger screens */
 @media screen and (min-width: 768px) {
     #services .card-body {
-        min-height: 191px;
+        min-height: 190px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     #services .card-body {
-        min-height: 220px;
+        min-height: 190px;
     }
 }
 
 @media screen and (min-width: 1400px) {
     #services .card-body {
-        min-height: 195px;
+        min-height: 190px;
+    }
+    #header {
+        margin-top: 3rem;
     }
 }
