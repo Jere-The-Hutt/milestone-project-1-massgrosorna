@@ -168,6 +168,16 @@ header h2 {
     color: var(--highlight-color);
 }
 
+.modal-header {
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+.modal-text {
+    color: var(--primary-color);
+    margin-top: 1rem;
+}
+
 /* Footer */
 
 #contact {
