@@ -26,7 +26,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets\images\massgrosorna-logo-header.png" alt="MassGrosorna header logo" class="logo">
+                <img src="assets/images/massgrosorna-logo-header.png" alt="MassGrosorna header logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation menu">
@@ -44,7 +44,7 @@
     </nav>
 
     <!-- Header -->
-    <header id="header" class="container section">
+    <header id="header-library" class="container section">
         <div class="row">
             <div id="header-text" class="col-12 text-center">
                 <h1 class="display-3">Bibliotek</h1>
@@ -64,24 +64,24 @@
             <div id="library" class="row justify-content-center mb-2">
                 <div class="col-4 card">
                     <!-- Bootstrap Carousel -->
-                    <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div id="card-carousel-1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="#" class="d-block w-100" alt="Image 1">
+                                <img src="assets/images/massgrosorna-book1-preview-01.png" class="d-block w-100" alt="Bam och den Stormiga Natten book cover">
                             </div>
                             <div class="carousel-item">
-                                <img src="#" class="d-block w-100" alt="Image 2">
+                                <img src="assets/images/massgrosorna-book1-preview-02.png" class="d-block w-100" alt="Bam och den Stormiga Natten preview 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="#" class="d-block w-100" alt="Image 3">
+                                <img src="assets/images/massgrosorna-book1-preview-03.png" class="d-block w-100" alt="Bam och den Stormiga Natten preview 2">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#card-carousel-1"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel"
+                        <button class="carousel-control-next" type="button" data-bs-target="#card-carousel-1"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
@@ -97,24 +97,24 @@
                 </div>
                 <div class="col-4 card">
                     <!-- Bootstrap Carousel -->
-                    <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div id="card-carousel-2" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="#" class="d-block w-100" alt="Image 1">
+                                <img src="assets/images/massgrosorna-book2-preview-01.png" class="d-block w-100" alt="Bam och den Stora Vågen book cover">
                             </div>
                             <div class="carousel-item">
-                                <img src="#" class="d-block w-100" alt="Image 2">
+                                <img src="assets/images/massgrosorna-book2-preview-02.png" class="d-block w-100" alt="Bam och den Stora Vågen preview 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="#" class="d-block w-100" alt="Image 3">
+                                <img src="assets/images/massgrosorna-book2-preview-03.png" class="d-block w-100" alt="Bam och den Stora Vågen preview 2">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#card-carousel-2"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel"
+                        <button class="carousel-control-next" type="button" data-bs-target="#card-carousel-2"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
@@ -130,9 +130,9 @@
                 </div>
             </div>
             <!-- Button to trigger the modal -->
-            <div id="button-modal" class="text-center m-3">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal">
-                    Beställa här
+            <div id="button-modal" class="text-center m-5">
+                <button type="button" class="btn custom-button-filled" data-bs-toggle="modal" data-bs-target="#orderModal">
+                    Sugen på att beställa?
                 </button>
             </div>
             <!-- Modal -->
@@ -156,54 +156,48 @@
                             <form>
                                 <div class="row mb-2">
                                     <div class="col">
-                                        <div data-mdb-input-init class="form-outline">
-                                            <input type="text" class="form-control" />
-                                            <label class="form-label" for="form7Example1">First name</label>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div data-mdb-input-init class="form-outline">
-                                            <input type="text" class="form-control" />
-                                            <label class="form-label" for="form7Example2">Last name</label>
+                                        <div class="form-outline mb-2">
+                                            <input type="text" class="form-control" id="full-name" required>
+                                            <label class="form-label" for="full-name">Full Name</label>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- Text input -->
-                                <div data-mdb-input-init class="form-outline mb-4">
+                                <div data-mdb-input-init class="form-outline mb-2">
                                     <input type="text" class="form-control" />
                                     <label class="form-label" for="form7Example3">Company name</label>
                                 </div>
 
                                 <!-- Text input -->
-                                <div data-mdb-input-init class="form-outline mb-4">
-                                    <input type="text" class="form-control" />
+                                <div data-mdb-input-init class="form-outline mb-2">
+                                    <input type="text" class="form-control" required/>
                                     <label class="form-label" for="form7Example4">Address</label>
                                 </div>
 
                                 <!-- Email input -->
-                                <div data-mdb-input-init class="form-outline mb-4">
-                                    <input type="email" class="form-control" />
+                                <div data-mdb-input-init class="form-outline mb-2">
+                                    <input type="email" class="form-control" required/>
                                     <label class="form-label" for="form7Example5">Email</label>
                                 </div>
 
                                 <!-- Number input -->
-                                <div data-mdb-input-init class="form-outline mb-4">
+                                <div data-mdb-input-init class="form-outline mb-2">
                                     <input type="number" class="form-control" />
                                     <label class="form-label" for="form7Example6">Phone</label>
                                 </div>
 
                                 <!-- Message input -->
-                                <div data-mdb-input-init class="form-outline mb-4">
-                                    <textarea class="form-control" rows="4"></textarea>
+                                <div data-mdb-input-init class="form-outline mb-2">
+                                    <textarea class="form-control" rows="4" required></textarea>
                                     <label class="form-label" for="form7Example7">Additional information</label>
                                 </div>
-                            </form>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <button type="submit" class="btn custom-button-filled">Send Message</button>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -249,19 +243,17 @@
                                     placeholder="Your email" required>
                             </div>
                         </div>
-                    </form>
-                </div>
 
+                </div>
                 <!-- Message Field (Middle on small screens) -->
                 <div class="col-10 col-md-4 text-center text-md-start">
-                    <form action="#" method="GET">
-                        <div class="mb-2">
-                            <textarea class="form-control" id="message" name="message" placeholder="Your message"
-                                rows="5" required></textarea>
-                        </div>
-                        <div class="text-center text-md-start">
-                            <button type="submit" class="btn custom-button-filled mt-4">Submit</button>
-                        </div>
+                    <div class="mb-2">
+                        <textarea class="form-control" id="message" name="message" placeholder="Your message" rows="5"
+                            required></textarea>
+                    </div>
+                    <div class="text-center text-md-start">
+                        <button type="submit" class="btn custom-button-filled mt-4">Submit</button>
+                    </div>
                     </form>
                 </div>
             </div>

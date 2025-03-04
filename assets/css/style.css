@@ -15,9 +15,14 @@
 
 body {
     font-family: var(--primary-font);
+    background-color: white;
 }
 
-h1,
+h1 {
+    font-family: var(--secondary-font);
+    color: #f79112;
+}
+
 h2,
 h3 {
     font-family: var(--secondary-font);
@@ -32,12 +37,22 @@ h3 {
     padding-top: 4rem; /* Prevent navbar overlap */
 }
 
-#contact .section {
-    padding-top: 2rem;
-}
-
 /* Buttons */
 .custom-button-filled {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
+    padding-bottom: 5px;
+}
+
+#button-modal .custom-button-filled {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: white;
+    padding-bottom: 5px;
+}
+
+#button-modal .custom-button-filled:hover {
     border: 2px solid var(--secondary-color);
     background-color: var(--secondary-color);
     color: white;
@@ -53,7 +68,7 @@ h3 {
 
 .custom-button-outline {
     border: 3px solid var(--highlight-color);
-    padding: 10px 20px;
+    padding: 7px 25px;
     color: var(--highlight-color);
 }
 
@@ -86,6 +101,7 @@ h3 {
 
 #header {
     padding-top: 5rem;
+    color: var(--highlight-color);
 }
 
 #header .logo {
@@ -96,12 +112,7 @@ h3 {
     color: #f79112;
 }
 
-#header h2 {
-    color: var(--primary-color);
-}
-
-#header {
-    padding-top: 5rem;
+#header h3 {
     color: var(--highlight-color);
 }
 
@@ -115,21 +126,7 @@ h3 {
     justify-content: space-evenly;
 }
 
-#library .card {
-    margin-right: 20px;
-}
-
-#services .card {
-    background-color: var(--highlight-color-light);
-    border: none;
-    max-width: 100%;
-    max-height: 70%;
-    width: 30rem; /* Ensures equal card width */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+#services .card,
 #library .card {
     background-color: var(--highlight-color-light);
     border: none;
@@ -139,6 +136,8 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 #services .card {
@@ -156,8 +155,8 @@ h3 {
     object-position: top;
 }
 
-#library .card-img-top {
-    object-position: top;
+#library .card {
+    padding: 0.7rem;
 }
 
 header h1 {
@@ -175,7 +174,7 @@ header h2 {
 
 .modal-text {
     color: var(--primary-color);
-    margin-top: 1rem;
+    padding: 1rem;
 }
 
 /* Footer */
@@ -183,7 +182,7 @@ header h2 {
 #contact {
     background-color: var(--primary-color);
     color: white;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 #contact .sub-heading-color {
@@ -193,7 +192,7 @@ header h2 {
 #contact .social-links {
     display: flex;
     justify-content: center;
-    gap: 2rem; /* Space between icons */
+    gap: 1rem; /* Space between icons */
 }
 
 
