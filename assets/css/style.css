@@ -138,6 +138,12 @@ h3 {
     align-items: center;
     margin-left: 2rem;
     margin-right: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+#services .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 #services .card {
