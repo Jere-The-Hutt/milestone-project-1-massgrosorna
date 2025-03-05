@@ -111,6 +111,14 @@ h3 {
 
 #header {
     padding-top: 5rem;
+}
+
+#header-2 {
+    padding-top: 4rem;
+}
+
+#header,
+#header-2 {
     color: var(--highlight-color);
 }
 
@@ -118,7 +126,8 @@ h3 {
     max-width: 450px;
 }
 
-#header h1 {
+#header h1,
+#header-2 h1 {
     color: var(--highlight-color);
     text-transform: uppercase;
 }
@@ -255,6 +264,9 @@ h3 {
     #services .card {
         margin-bottom: 0.5rem !important;
     }
+    #library .card {
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -264,24 +276,30 @@ h3 {
     .card-img-top {
         height: 150px; /* Further reduce image height for mobile */
     }
+    #library .card {
+        margin-bottom: 2rem;
+    }
 }
 
 /* Adjustments for larger screens */
 @media screen and (min-width: 768px) {
-    #services .card-body {
-        min-height: 190px;
+    #services .card {
+        min-height: 275px;
+    }
+    #library .card {
+        margin-bottom: 2rem;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    #services .card-body {
-        min-height: 190px;
+    #services .card {
+        min-height: 275px;
     }
 }
 
 @media screen and (min-width: 1400px) {
-    #services .card-body {
-        min-height: 190px;
+    #services .card {
+        min-height: 275px;
     }
     #header {
         margin-top: 3rem;
