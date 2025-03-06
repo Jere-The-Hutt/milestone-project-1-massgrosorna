@@ -9,7 +9,8 @@
     --primary-color-light: #7A9273; /* Reseda green */
     --secondary-color: #19647E; /* Payne's gray */
     --secondary-color-light: #EDF8FD; /* Alice blue */
-    --highlight-color-light: #FABC50; /* Xanthous */
+    --highlight-color: #FABC50; /* Xanthous */
+    --highlight-color-light: #D8DDD4; /* Alabaster */
 }
 
 /* Global Styles */
@@ -36,7 +37,7 @@ h1, h2, h3 {
 #button-modal .custom-button-filled {
     border: 2px solid var(--primary-color-light);
     background-color: var(--primary-color-light);
-    color: white;
+    color: var(--secondary-color-light);
     padding-bottom: 5px;
 }
 
@@ -63,12 +64,12 @@ h1, h2, h3 {
 
 .custom-button-outline:hover {
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--secondary-color-light);
 }
 
 #button-contact .custom-button-outline {
     border-color: var(--primary-color-light);
-    color: white;
+    color: var(--secondary-color-light);
     margin-bottom: 2rem;
 }
 
@@ -87,11 +88,11 @@ h1, h2, h3 {
 }
 
 .nav-link {
-    color: #D8DDD4;
+    color: var(--highlight-color-light);
 }
 
 .nav-link:hover {
-    color: var(--highlight-color-light);
+    color: var(--secondary-color-light);
 }
 
 /* Header */
@@ -130,7 +131,7 @@ h1, h2, h3 {
 #services .card,
 #library .card,
 #about-card .card {
-    background-color: var(--highlight-color-light);
+    background-color: var(--highlight-color);
     border: none;
     max-width: 100%;
     max-height: 70%;
@@ -205,12 +206,12 @@ h1, h2, h3 {
 /* Footer */
 #contact {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--secondary-color-light);
     padding-bottom: 2rem;
 }
 
 #contact .sub-heading-color {
-    color: var(--highlight-color-light);
+    color: var(--highlight-color);
 }
 
 #contact .social-links {
@@ -220,7 +221,7 @@ h1, h2, h3 {
 }
 
 #contact .social-links i {
-    color: var(--highlight-color-light);
+    color: var(--highlight-color);
     font-size: 3rem;
     transition: color 0.3s ease-in-out;
     margin: 0 2rem;
