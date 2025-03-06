@@ -92,7 +92,7 @@ h1, h2, h3 {
 }
 
 .nav-link:hover {
-    color: var(--secondary-color-light);
+    color: var(--highlight-color);
 }
 
 /* Header */
