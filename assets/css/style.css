@@ -5,16 +5,17 @@
 :root {
     --primary-font: "roca", sans-serif;
     --secondary-font: "jimbo-condensed-std", sans-serif;
-    --primary-color: #37392E; /* dark green */
-    --secondary-color: #7A9273; /* green */
-    --highlight-color: #19647E; /* blue */
-    --highlight-color-light: #FABC50; /* yellow */
+    --primary-color: #37392E; /* Black olive */
+    --primary-color-light: #7A9273; /* Reseda green */
+    --secondary-color: #19647E; /* Payne's gray */
+    --secondary-color-light: #EDF8FD; /* Alice blue */
+    --highlight-color-light: #FABC50; /* Xanthous */
 }
 
 /* Global Styles */
 body {
     font-family: var(--primary-font);
-    background-color: white;
+    background-color: var(--secondary-color-light);
 }
 
 h1, h2, h3 {
@@ -23,7 +24,7 @@ h1, h2, h3 {
 }
 
 .sub-heading-color {
-    color: var(--highlight-color);
+    color: var(--secondary-color);
 }
 
 .section {
@@ -33,8 +34,8 @@ h1, h2, h3 {
 /* Buttons */
 .custom-button-filled, 
 #button-modal .custom-button-filled {
-    border: 2px solid var(--secondary-color);
-    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color-light);
+    background-color: var(--primary-color-light);
     color: white;
     padding-bottom: 5px;
 }
@@ -45,39 +46,39 @@ h1, h2, h3 {
 }
 
 #button-modal .custom-button-filled {
-    border-color: var(--highlight-color);
-    background-color: var(--highlight-color);
-}
-
-#button-modal .custom-button-filled:hover {
     border-color: var(--secondary-color);
     background-color: var(--secondary-color);
 }
 
+#button-modal .custom-button-filled:hover {
+    border-color: var(--primary-color-light);
+    background-color: var(--primary-color-light);
+}
+
 .custom-button-outline {
-    border: 3px solid var(--highlight-color);
+    border: 3px solid var(--secondary-color);
     padding: 7px 25px;
-    color: var(--highlight-color);
+    color: var(--secondary-color);
 }
 
 .custom-button-outline:hover {
-    background-color: var(--highlight-color);
+    background-color: var(--secondary-color);
     color: white;
 }
 
 #button-contact .custom-button-outline {
-    border-color: var(--secondary-color);
+    border-color: var(--primary-color-light);
     color: white;
     margin-bottom: 2rem;
 }
 
 #button-contact .custom-button-outline:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color-light);
 }
 
 /* Navbar */
 #navbar {
-    background-color: var(--highlight-color);
+    background-color: var(--secondary-color);
 }
 
 #navbar .logo {
@@ -96,7 +97,7 @@ h1, h2, h3 {
 /* Header */
 #header, #header-2 {
     padding-top: 4rem;
-    color: var(--highlight-color);
+    color: var(--secondary-color);
 }
 
 #header {
@@ -108,7 +109,7 @@ h1, h2, h3 {
 }
 
 #header h1, #header-2 h1 {
-    color: var(--highlight-color);
+    color: var(--secondary-color);
     text-transform: uppercase;
 }
 
@@ -187,12 +188,12 @@ h1, h2, h3 {
 }
 
 #about-card .card-title {
-    color: var(--highlight-color);
+    color: var(--secondary-color);
 }
 
 /* Modal */
 .modal-header {
-    background-color: var(--highlight-color);
+    background-color: var(--secondary-color);
     color: white;
 }
 
@@ -226,7 +227,7 @@ h1, h2, h3 {
 }
 
 #contact .social-links i:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color-light);
 }
 
 #contact .custom-button-filled {
