@@ -146,6 +146,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- Button to trigger the modal -->
             <div id="button-modal" class="text-center mb-5">
                 <button type="button" class="btn custom-button-filled" data-bs-toggle="modal"
@@ -153,25 +154,27 @@
                     Sugen på att beställa?
                 </button>
             </div>
-            <!-- Modal -->
-            <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="orderModalLabel">Beställa</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="col-12 text-center">
-                            <p class="modal-text">Inom Sverige kan du beställa böckerna genom att
-                                Swisha till 0768189831 och nedan skriva in
-                                adressen vi ska leverera boken till, samt
-                                vilken/vilka av böckerna du vill köpa. En bok
-                                inklusive porto kostar 169kr, två stycken inklusive
-                                porto 249kr.</p>
-                        </div>
-                        <div class="modal-body">
-                            <!-- Form inside the modal -->
-                            <form>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="orderModalLabel">Beställa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="modal-text">Inom Sverige kan du beställa böckerna genom att
+                            Swisha till 0768189831 och nedan skriva in
+                            adressen vi ska leverera boken till, samt
+                            vilken/vilka av böckerna du vill köpa. En bok
+                            inklusive porto kostar 169kr, två stycken inklusive
+                            porto 249kr.</p>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form inside the modal -->
+                        <form action="success.html" method="GET">
+                            <div>
                                 <div class="row mb-2">
                                     <div class="col">
                                         <div class="form-outline mb-2">
@@ -182,45 +185,46 @@
                                 </div>
 
                                 <!-- Text input -->
-                                <div data-mdb-input-init class="form-outline mb-2">
-                                    <input type="text" class="form-control" />
-                                    <label class="form-label" for="form7Example3">Företagsnamn</label>
+                                <div class="form-outline mb-2">
+                                    <input id="company" type="text" class="form-control" />
+                                    <label class="form-label" for="company">Företagsnamn</label>
                                 </div>
 
                                 <!-- Text input -->
-                                <div data-mdb-input-init class="form-outline mb-2">
-                                    <input type="text" class="form-control" required />
-                                    <label class="form-label" for="form7Example4">Adress</label>
+                                <div class="form-outline mb-2">
+                                    <input id="address" type="text" class="form-control" required />
+                                    <label class="form-label" for="address">Adress</label>
                                 </div>
 
                                 <!-- Email input -->
-                                <div data-mdb-input-init class="form-outline mb-2">
-                                    <input type="email" class="form-control" required />
-                                    <label class="form-label" for="form7Example5">E-post</label>
+                                <div class="form-outline mb-2">
+                                    <input id="email" type="email" class="form-control" required />
+                                    <label class="form-label" for="email">E-post</label>
                                 </div>
 
                                 <!-- Number input -->
-                                <div data-mdb-input-init class="form-outline mb-2">
-                                    <input type="number" class="form-control" />
-                                    <label class="form-label" for="form7Example6">Telefonnummer</label>
+                                <div class="form-outline mb-2">
+                                    <input id="telephone" type="number" class="form-control" />
+                                    <label class="form-label" for="telephone">Telefonnummer</label>
                                 </div>
 
                                 <!-- Message input -->
-                                <div data-mdb-input-init class="form-outline mb-2">
-                                    <textarea class="form-control" rows="4" required></textarea>
-                                    <label class="form-label" for="form7Example7">Ditt meddelande</label>
+                                <div class="form-outline mb-2">
+                                    <textarea id="message" class="form-control" rows="4" required></textarea>
+                                    <label class="form-label" for="message">Ditt meddelande</label>
                                 </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
-                            <button type="submit" class="btn custom-button-filled">Skicka</button>
-                        </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Stäng</button>
+                                    <button type="submit" class="btn custom-button-filled">Skicka</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
-        </section>
-
+        </div>
     </main>
 
     <!-- Footer / contact section -->
@@ -256,16 +260,17 @@
                                     required>
                             </div>
                             <div class="col-10 col-md-10 mb-3">
-                                <input class="form-control" id="email" name="email" type="email" placeholder="E-post"
+                                <input class="form-control" id="email-footer" name="email" type="email" placeholder="E-post"
                                     required>
                             </div>
                             <div class="col-10 col-md-10 mb-2">
-                                <textarea class="form-control" id="message" name="message" placeholder="Ditt Meddelande"
+                                <textarea class="form-control" id="message-footer" name="message" placeholder="Ditt Meddelande"
                                     rows="5" required></textarea>
                             </div>
                             <div id="button-contact" class="text-center justify-content-center">
                                 <button type="submit" class="btn custom-button-outline mt-4">Skicka</button>
                             </div>
+                        </div>
                     </form>
                 </div>
             </div>

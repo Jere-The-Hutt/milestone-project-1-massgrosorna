@@ -1,4 +1,4 @@
-/* Adobe fonts import */
+/* Adobe Fonts Import */
 @import url("https://use.typekit.net/fjv6cjn.css");
 
 /* CSS Variables */
@@ -11,20 +11,13 @@
     --highlight-color-light: #FABC50; /* yellow */
 }
 
-/* Global styles */
-
+/* Global Styles */
 body {
     font-family: var(--primary-font);
     background-color: white;
 }
 
-h1 {
-    font-family: var(--secondary-font);
-    color: var(--primary-color);
-}
-
-h2,
-h3 {
+h1, h2, h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
 }
@@ -38,21 +31,8 @@ h3 {
 }
 
 /* Buttons */
-.custom-button-filled {
-    border: 2px solid var(--secondary-color);
-    background-color: var(--secondary-color);
-    color: white;
-    padding-bottom: 5px;
-}
-
+.custom-button-filled, 
 #button-modal .custom-button-filled {
-    border: 2px solid var(--highlight-color);
-    background-color: var(--highlight-color);
-    color: white;
-    padding-bottom: 5px;
-}
-
-#button-modal .custom-button-filled:hover {
     border: 2px solid var(--secondary-color);
     background-color: var(--secondary-color);
     color: white;
@@ -62,8 +42,16 @@ h3 {
 .custom-button-filled:hover {
     border: 2px solid var(--highlight-color-light);
     background-color: var(--highlight-color-light);
-    color: white;
-    padding-bottom: 5px;
+}
+
+#button-modal .custom-button-filled {
+    border-color: var(--highlight-color);
+    background-color: var(--highlight-color);
+}
+
+#button-modal .custom-button-filled:hover {
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
 .custom-button-outline {
@@ -78,15 +66,13 @@ h3 {
 }
 
 #button-contact .custom-button-outline {
-    border: 3px solid var(--secondary-color);
-    padding: 7px 25px;
+    border-color: var(--secondary-color);
     color: white;
     margin-bottom: 2rem;
 }
 
 #button-contact .custom-button-outline:hover {
     background-color: var(--secondary-color);
-    color: white;
 }
 
 /* Navbar */
@@ -108,26 +94,20 @@ h3 {
 }
 
 /* Header */
+#header, #header-2 {
+    padding-top: 4rem;
+    color: var(--highlight-color);
+}
 
 #header {
     padding-top: 5rem;
-}
-
-#header-2 {
-    padding-top: 4rem;
-}
-
-#header,
-#header-2 {
-    color: var(--highlight-color);
 }
 
 #header .logo {
     max-width: 450px;
 }
 
-#header h1,
-#header-2 h1 {
+#header h1, #header-2 h1 {
     color: var(--highlight-color);
     text-transform: uppercase;
 }
@@ -141,7 +121,7 @@ h3 {
     color: var(--primary-color);
 }
 
-/* Main elements */
+/* Services, Library, About Cards */
 #services .row {
     justify-content: space-evenly;
 }
@@ -153,12 +133,11 @@ h3 {
     border: none;
     max-width: 100%;
     max-height: 70%;
-    width: 30rem; /* Ensures equal card width */
+    width: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
 }
@@ -166,13 +145,19 @@ h3 {
 #services .card {
     transition: transform 0.2s ease-in-out;
 }
+
 #services .card:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
+#services-card-body {
+    height: 100px;
+    padding: 1.5rem 0.7rem 0.7rem;
+}
+
 .card-img-top {
-    height: 200px; /* Adjust as needed */
+    height: 200px;
     width: 100%;
     object-fit: cover;
     object-position: top;
@@ -184,12 +169,17 @@ h3 {
 
 #about-card .card {
     height: 450px;
-    padding: 1rem;
     margin-bottom: 3rem;
+}
+
+#about-card .card-body {
+    height: 450px;
+    padding: 0.7rem;
 }
 
 #about-card .card-img-top {
     height: 77%;
+    margin: 0.7rem;
 }
 
 #about-card .card-text {
@@ -200,6 +190,7 @@ h3 {
     color: var(--highlight-color);
 }
 
+/* Modal */
 .modal-header {
     background-color: var(--highlight-color);
     color: white;
@@ -211,7 +202,6 @@ h3 {
 }
 
 /* Footer */
-
 #contact {
     background-color: var(--primary-color);
     color: white;
@@ -225,16 +215,14 @@ h3 {
 #contact .social-links {
     display: flex;
     justify-content: center;
-    gap: 1rem; /* Space between icons */
+    gap: 1rem;
 }
-
 
 #contact .social-links i {
     color: var(--highlight-color-light);
     font-size: 3rem;
     transition: color 0.3s ease-in-out;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0 2rem;
 }
 
 #contact .social-links i:hover {
@@ -245,36 +233,26 @@ h3 {
     margin-bottom: 1.5rem;
 }
 
-/* Grid visualisation CSS for testing */
-
-/* 
-.container,
-.row {
-    border: 2px solid black;
-}
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-}
-*/
-
-/* Media queries */
-
-/* Default adjustments */
+/* Default Adjustments */
 .card-body {
-    min-height: 150px; /* Ensures text space inside the card */
+    min-height: 150px;
     padding: 20px;
 }
 
-/* Mobile-first responsive styles */
+/* Media Queries */
 @media screen and (max-width: 768px) {
     #header .logo {
         max-width: 250px;
     }
-    .card-img-top {
-        height: 150px; /* Adjust image height for tablets */
+    
+    #services .card {
+        min-height: 220px;
     }
+
+    .card-img-top {
+        height: 150px;
+    }
+
     #library .card {
         margin-bottom: 2rem;
     }
@@ -284,19 +262,21 @@ h3 {
     #header .logo {
         max-width: 180px;
     }
+
     .card-img-top {
-        height: 150px; /* Further reduce image height for mobile */
+        height: 150px;
     }
+
     #library .card {
         margin-bottom: 2rem;
     }
 }
 
-/* Adjustments for larger screens */
 @media screen and (min-width: 768px) {
     #services .card {
         min-height: 275px;
     }
+
     #library .card {
         margin-bottom: 2rem;
     }
@@ -312,6 +292,7 @@ h3 {
     #services .card {
         min-height: 275px;
     }
+
     #header {
         margin-top: 3rem;
     }
