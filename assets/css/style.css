@@ -258,6 +258,10 @@ h1, h2, h3 {
     #library .card {
         margin-bottom: 2rem;
     }
+
+    #success-img {
+        max-width: 70%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -271,6 +275,9 @@ h1, h2, h3 {
 
     #library .card {
         margin-bottom: 2rem;
+    }
+    #success-img {
+        max-width: 70%;
     }
 }
 
